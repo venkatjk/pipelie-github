@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello World from GIT'
+                echo 'Hello World from GIT test file'
               
             }
                       
