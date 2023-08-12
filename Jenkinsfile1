@@ -10,35 +10,5 @@ pipeline {
             }
                       
         }
-        stage('Build') {
-            steps {
-                echo 'Build stage'
-              
-            }
-          
-        }
-      
-        stage('DEV') {
-            steps {
-                echo 'Deploy to DEV server'
-             
-            }
-        }
-           stage('PROD') {
-               input {
-                   message "should we continue"
-                   ok "yes"
-               }
-            steps {
-                echo 'Deploy to PROD server'
-               
-            }
-            
-        
-    }
-    post { 
-        success { 
-            echo 'I will always say Hello again!'
-        }
-    }
+      }
 }
