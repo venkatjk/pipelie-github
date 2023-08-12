@@ -88,7 +88,7 @@ pipeline {
         }
     }
     post { 
-        failure { 
+        success { 
             echo 'I will always say Hello again!'
         }
     }
